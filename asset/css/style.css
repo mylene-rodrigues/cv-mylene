@@ -1,0 +1,164 @@
+/*  Logo et menu */
+.cv-photo img {
+   /* display: block; */
+    width: 150px;
+    height: 150px;
+    border: 10px solid #f8f9fa;
+    border-radius: 50%;
+}
+.section-nav {
+    z-index: 100;
+    background-color: #fff;
+}
+#main {
+    position: absolute;
+    top: 308px;
+}
+/* Section 1 presentation */
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5em !important;
+}
+.section-title-h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em !important; 
+}
+.card-presentation {
+    min-width:60%;
+    max-width: 80%;
+}
+.card p {
+    text-align: justify;
+}
+.card a {
+    color: #000;
+    text-decoration: none;
+}
+.card a:hover {
+    color: #000;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    color:#4b92ba;
+
+}
+.parallax {
+    /* The image used */
+    background-image: url("../../asset/image/background.jpg");
+  
+    /* Set a specific height */
+    min-height: 600px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/* section competence */
+.title-competence{
+    font-family: 'Lobster', cursive;
+    margin-top: 15px;
+    font-size: 1.5em !important;
+   
+}
+
+/* flip card */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-front img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+.competence-bg {
+    background-image: url("../../asset/image/image-from-rawpixel-id-2351686-original.png");
+      /* Set a specific height */
+      min-height: 600px; 
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 50px;
+}
+/* Media Queries */  
+@media screen and (max-width: 1440px) {
+    .flip-card-front img {
+        width: 250px;
+        height: 250px;
+      }
+      .flip-card {
+        background-color: transparent;
+        width: 250px;
+        height: 250px;
+        perspective: 1000px;
+      }
+}
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 2.5em !important;
+    }
+    .cv-photo img {
+        width: 150px;
+        height: 150px;
+    }
+    .card {
+        width:75%;
+    }
+    #main{
+        top: 300px;
+    }
+    .parallax {
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #main{
+        top: 236px;
+    }
+}
